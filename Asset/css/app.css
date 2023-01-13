@@ -1,0 +1,266 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  max-width: 1470px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+.containerfluid {
+  max-width: 1150px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+.section-title {
+  display: block;
+  color: #FF4415;
+  font-family: "Seaweed Script", cursive;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 50px;
+}
+
+.header {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-auth {
+  display: flex;
+  align-items: center;
+  gap: 0 12px;
+}
+.header-signup-link {
+  color: #ffffff;
+  padding: 13px 16px;
+  background-image: linear-gradient(180deg, #272727 0%, #171717 46.01%, #101010 100%);
+  border-radius: 12px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+}
+.menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #232323;
+}
+.menu-toggle {
+  display: none;
+}
+
+.hero {
+  margin-bottom: 80px;
+}
+.hero-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 90px;
+}
+.hero-content {
+  max-width: 515px;
+  width: 100%;
+}
+.hero-title {
+  margin-bottom: 16px;
+}
+.hero-heading {
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 72px;
+  color: #101010;
+  margin-bottom: 22px;
+}
+.hero-desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #646464;
+  margin-bottom: 34px;
+}
+.hero-image {
+  transform: translateX(6%);
+}
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-location {
+  margin-bottom: 50px;
+}
+.hero-form {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  border: 1px solid #00BE4C;
+  border-radius: 16px;
+  overflow-x: hidden;
+}
+.hero-input {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+}
+.hero-input input {
+  height: 50px;
+  padding: 0 20px;
+  outline: none;
+  border: none;
+}
+.hero-input input::placeholder {
+  color: #b1b1b1;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+}
+.hero-discover {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-image: linear-gradient(92.18deg, #3FDA7D 48.17%, #00BE4C 100%);
+  box-shadow: 0px 10px 20px -10px rgba(234, 234, 234, 0.4);
+  padding: 10px 14px;
+  border-radius: 16px;
+}
+.hero-discover-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.hero-discover-icon-link {
+  display: block;
+  background-color: #ffffff;
+  color: #36BD59;
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+.hero-member {
+  color: #838383;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+}
+.hero-member-link {
+  color: #FF4D20;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.food {
+  margin-bottom: 120px;
+}
+.food-container {
+  max-width: 1206px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+.food-header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 56px;
+}
+.food-header-heading {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 40px;
+  color: #101010;
+}
+.food-item {
+  padding: 0 20px 0 30px;
+  background-color: #F7F7F7;
+  border-radius: 24px;
+  display: flex !important;
+  align-items: center !important;
+  height: 130px;
+  gap: 32px;
+}
+.food-content {
+  width: 30%;
+}
+.food-title {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+}
+.food-pricing {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #171717;
+}
+.food-pricing span {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FF4415;
+}
+.food-image {
+  transform: translateY(-20%);
+}
+.food-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slick-initialized .slick-slide {
+  margin: 70px 10px;
+}
+
+/*# sourceMappingURL=app.css.map */

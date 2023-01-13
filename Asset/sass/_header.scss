@@ -1,0 +1,25 @@
+.header {
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+    &-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-auth {
+        display: flex;
+        align-items: center;
+        gap: 0 12px;
+    }
+
+    &-signup {
+        &-link {
+            color: $white-color;
+            padding: 13px 16px;
+            background-image: linear-gradient(180deg, #272727 0%, #171717 46.01%, #101010 100%);
+            border-radius: 12px;
+        }
+    }
+}

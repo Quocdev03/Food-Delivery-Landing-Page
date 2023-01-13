@@ -1,0 +1,9 @@
+.slick {
+    &-initialized {
+        .slick {
+            &-slide {
+                margin: 70px 10px;
+            }
+        }
+    }
+}

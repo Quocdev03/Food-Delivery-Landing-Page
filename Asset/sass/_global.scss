@@ -1,0 +1,34 @@
+body {
+    background: $white-color;
+    font-family: $primary-font;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    max-width: 1470px;
+    margin-inline: auto;
+    padding-inline: 15px;
+}
+
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 15px;
+}
+
+.containerfluid {
+    max-width: 1150px;
+    margin-inline: auto;
+    padding-inline: 15px;
+}
+
+.section {
+    &-title {
+        display: block;
+        color: $section-title;
+        font-family: $secondary-font;
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 50px;
+    }
+}
