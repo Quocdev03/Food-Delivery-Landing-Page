@@ -6,4 +6,29 @@
             }
         }
     }
+
+    &-arrow {
+        position: absolute;
+        top: -32%;
+        right: 0;
+        z-index: 2;
+        background-color: $heading-color;
+        color: #ffff;
+    }
+
+    &-prev {
+        right: 5%;
+        background-color: #ffff;
+        color: #C4C4C4;
+    }
+
+    &-arrow,
+    &-prev {
+        border: none;
+        outline: none;
+        padding: 10px 13px;
+        cursor: pointer;
+        border-radius: 30px;
+        font-size: 16px;
+    }
 }
