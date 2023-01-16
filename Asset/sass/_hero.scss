@@ -8,9 +8,10 @@
         gap: 90px;
     }
 
-    &-content {
-        max-width: 515px;
-        width: 100%;
+    &-content,
+    &-image {
+        // max-width: 515px;
+        width: 50%;
     }
 
     &-title {
@@ -31,10 +32,11 @@
         line-height: 30px;
         color: $text-color;
         margin-bottom: 34px;
+        max-width: 452px;
     }
 
     &-image {
-        transform: translateX(6%);
+        transform: translateX(11%);
 
         img {
             width: 100%;
@@ -50,16 +52,17 @@
     &-form {
         display: flex;
         align-items: center;
-        gap: 40px;
+        gap: 26px;
         border: 1px solid #00BE4C;
         border-radius: 16px;
         overflow-x: hidden;
+        max-width: 464px;
     }
 
     &-input {
         display: flex;
         align-items: center;
-        gap: 53px;
+        gap: 15px;
 
         input {
             height: 50px;

@@ -6,24 +6,16 @@ body {
 
 .wrapper {
     max-width: 1470px;
-    margin-inline: auto;
-    padding-inline: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1330px;
     padding-left: 15px;
     padding-right: 15px;
-}
-
-.containerfluid {
-    max-width: 1150px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .section {
@@ -34,6 +26,34 @@ body {
         font-weight: 400;
         font-size: 44px;
         line-height: 50px;
+    }
+
+    &-center {
         text-align: center;
     }
+}
+
+.btn {
+    &-primary {
+        padding: 22px 20px;
+        border-radius: 16px;
+        cursor: pointer;
+    }
+
+    &-icon {
+        padding: 12px 15px;
+        background-color: $white-color;
+        border-radius: 10px;
+    }
+
+    &-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: $white-color;
+    }
+}
+
+.hide {
+    display: none;
 }
