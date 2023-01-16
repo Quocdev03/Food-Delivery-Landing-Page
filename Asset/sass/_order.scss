@@ -1,4 +1,6 @@
 .order {
+    margin-bottom: 110px;
+
     &-title {
         text-align: center;
         margin-bottom: 10px;
@@ -69,6 +71,68 @@
         &-main {
             display: flex;
             align-items: center;
+            gap: 85px;
+            border-radius: 24px;
+            padding: 21px 50px;
+            background: linear-gradient(115deg, #FEB618 50%, #2FB652 0%);
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 40px;
+            color: $white-color;
+            margin-bottom: 22px;
+        }
+
+        &-desc {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: $white-color;
+        }
+
+        &-images {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            &-item {
+                &:first-child {
+                    transform: translateY(30px);
+                }
+
+                &:nth-child(2) {
+                    transform: translate(-25px, -80px);
+                }
+
+                &:nth-child(3) {
+                    transform: translateY(-30px);
+                }
+
+                &-text {
+                    font-family: $secondary-font;
+                    font-weight: 400;
+                    font-size: 43px;
+                    color: $white-color;
+                    line-height: 30px;
+                    transform: translate(15px, -45px) rotate(-18.51deg);
+
+                    span {
+                        font-family: $primary-font;
+                        font-weight: 600;
+                        font-size: 20px;
+                    }
+                }
+
+                &:nth-child(5) {
+                    transform: translate(-60px, 70px);
+                }
+
+                &:nth-child(6) {
+                    transform: translate(-80px, -35px);
+                }
+            }
         }
     }
 }

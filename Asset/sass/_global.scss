@@ -12,14 +12,18 @@ body {
 
 .container {
     max-width: 1200px;
-    margin-inline: auto;
-    padding-inline: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .containerfluid {
     max-width: 1150px;
-    margin-inline: auto;
-    padding-inline: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .section {

@@ -44,14 +44,18 @@ body {
 
 .container {
   max-width: 1200px;
-  margin-inline: auto;
-  padding-inline: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .containerfluid {
   max-width: 1150px;
-  margin-inline: auto;
-  padding-inline: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .section-title {
@@ -284,6 +288,9 @@ body {
   font-size: 16px;
 }
 
+.order {
+  margin-bottom: 110px;
+}
 .order-title {
   text-align: center;
   margin-bottom: 10px;
@@ -345,6 +352,101 @@ body {
 .order-offer-main {
   display: flex;
   align-items: center;
+  gap: 85px;
+  border-radius: 24px;
+  padding: 21px 50px;
+  background: linear-gradient(115deg, #FEB618 50%, #2FB652 0%);
+}
+.order-offer-title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 40px;
+  color: #ffffff;
+  margin-bottom: 22px;
+}
+.order-offer-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.order-offer-images {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.order-offer-images-item:first-child {
+  transform: translateY(30px);
+}
+.order-offer-images-item:nth-child(2) {
+  transform: translate(-25px, -80px);
+}
+.order-offer-images-item:nth-child(3) {
+  transform: translateY(-30px);
+}
+.order-offer-images-item-text {
+  font-family: "Seaweed Script", cursive;
+  font-weight: 400;
+  font-size: 43px;
+  color: #ffffff;
+  line-height: 30px;
+  transform: translate(15px, -45px) rotate(-18.51deg);
+}
+.order-offer-images-item-text span {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.order-offer-images-item:nth-child(5) {
+  transform: translate(-60px, 70px);
+}
+.order-offer-images-item:nth-child(6) {
+  transform: translate(-80px, -35px);
+}
+
+@media screen and (max-width: 1149.98px) {
+  .order-offer-main {
+    transition: all 0.2s linear;
+    flex-direction: column;
+    background: 0;
+    padding: 0;
+    gap: 40px;
+  }
+  .order-offer-content {
+    transition: all 0.2s linear;
+    background-color: #FEB618;
+    padding: 61px 20px;
+    border-radius: 24px;
+    width: 100%;
+    height: 240px;
+  }
+  .order-offer-images {
+    transition: all 0.2s linear;
+    background-color: #2FB652;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 24px;
+    width: 100%;
+    height: 240px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .order-offer-images img {
+    width: 100px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 494.98px) {
+  .order-offer-images img {
+    width: 60px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 350.98px) {
+  .order-offer-images img {
+    width: 40px;
+    object-fit: cover;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
