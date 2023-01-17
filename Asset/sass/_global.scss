@@ -16,6 +16,14 @@ body {
    padding-right: 15px;
    margin-left: auto;
    margin-right: auto;
+
+   &-fluid {
+      max-width: 1230px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: auto;
+   }
 }
 
 .section {

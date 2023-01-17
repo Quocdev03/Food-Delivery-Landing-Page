@@ -1,122 +1,116 @@
 .hero {
-    margin-bottom: 80px;
+   margin-bottom: 80px;
 
-    &-main {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 90px;
-    }
+   &-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 70px;
+   }
 
-    &-content,
-    &-image {
-        // max-width: 515px;
-        width: 50%;
-    }
+   // &-content,
+   // &-image {
+   //    width: 50%;
+   // }
 
-    &-title {
-        margin-bottom: 16px;
-    }
+   &-title {
+      margin-bottom: 16px;
+   }
 
-    &-heading {
-        font-weight: 700;
-        font-size: 62px;
-        line-height: 72px;
-        color: $heading-color;
-        margin-bottom: 22px;
-    }
+   &-heading {
+      font-weight: 700;
+      font-size: 62px;
+      line-height: 72px;
+      color: $heading-color;
+      margin-bottom: 22px;
+   }
 
-    &-desc {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 30px;
-        color: $text-color;
-        margin-bottom: 34px;
-        max-width: 452px;
-    }
+   &-desc {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: $text-color;
+      margin-bottom: 34px;
+      max-width: 452px;
+   }
 
-    &-image {
-        transform: translateX(11%);
+   &-image {
+      transform: translateX(11%);
 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
 
-    &-location {
-        margin-bottom: 50px;
-    }
+   &-location {
+      margin-bottom: 50px;
+   }
 
-    &-form {
-        display: flex;
-        align-items: center;
-        gap: 26px;
-        border: 1px solid #00BE4C;
-        border-radius: 16px;
-        overflow-x: hidden;
-        max-width: 464px;
-    }
+   &-form {
+      display: flex;
+      align-items: center;
 
-    &-input {
-        display: flex;
-        align-items: center;
-        gap: 15px;
+      &-input {
+         display: flex;
+         align-items: center;
+         border: 1px solid #00BE4C;
+         border-radius: 15px 0px 0px 15px;
+         padding: 24px 18px 24px 16px;
 
-        input {
-            height: 50px;
-            padding: 0 20px;
+         input {
             outline: none;
             border: none;
+            margin-right: 53px;
 
             &::placeholder {
-                color: #b1b1b1;
-                font-weight: 500;
-                font-size: 15px;
-                line-height: 15px;
+               font-weight: 500;
+               font-size: 15px;
+               line-height: 15px;
+               color: #b1b1b1;
             }
-        }
-    }
+         }
 
-    &-discover {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        background: $primary-gradient;
-        box-shadow: 0px 10px 20px -10px rgba(234, 234, 234, 0.4);
-        padding: 10px 14px;
-        border-radius: 16px;
+         img {
+            margin-right: 19px;
+         }
+      }
 
-        &-text {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 19px;
-            color: $white-color;
-        }
+      &-button {
+         display: flex;
+         align-items: center;
+         background: $primary-gradient;
+         border-radius: 0px 15px 15px 0px;
+         padding: 14px 16px 13px 20px;
+         border: 1px solid #00BE4C;
+         cursor: pointer;
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 19px;
+         color: $white-color;
 
-        &-icon {
-            &-link {
-                display: block;
-                background-color: $white-color;
-                color: $green-color;
-                padding: 10px 14px;
-                border-radius: 10px;
-            }
-        }
-    }
+         i {
+            padding: 12px 15px;
+            background-color: $white-color;
+            border-radius: 10px;
+            margin-left: 15px;
+            color: #00BE4C;
+         }
+      }
+   }
 
-    &-member {
-        color: #838383;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 30px;
+   &-member {
+      color: #838383;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
 
-        &-link {
-            color: #FF4D20;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 30px;
-        }
-    }
+      &-link {
+         color: #FF4D20;
+         font-weight: 600;
+         font-size: 18px;
+         line-height: 30px;
+      }
+   }
 }

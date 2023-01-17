@@ -1,92 +1,92 @@
 .location {
-    margin-bottom: 106px;
+   margin-bottom: 106px;
 
-    &-section {
-        &-title {
-            margin-bottom: 8px;
-        }
-    }
+   &-section {
+      &-title {
+         margin-bottom: 8px;
+      }
+   }
 
-    &-heading {
-        font-weight: 700;
-        font-size: 52px;
-        line-height: 62px;
-        color: $heading-color;
-        text-align: center;
-        width: 100%;
-        max-width: 589px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 80px;
-    }
+   &-heading {
+      font-weight: 700;
+      font-size: 52px;
+      line-height: 62px;
+      color: $heading-color;
+      text-align: center;
+      width: 100%;
+      max-width: 589px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 80px;
+   }
 
-    &-pickup {
-        display: flex;
-        justify-content: space-around;
-        // align-items: center;
-        gap: 68px;
-    }
+   &-pickup {
+      display: flex;
+      justify-content: space-around;
+      // align-items: center;
+      gap: 68px;
+   }
 
-    &-content {
-        &-header {
-            display: flex;
-            align-items: center;
-            gap: 58px;
-            margin-bottom: 80px;
-        }
+   &-content {
+      &-header {
+         display: flex;
+         align-items: center;
+         gap: 58px;
+         margin-bottom: 80px;
+      }
 
-        &-title {
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 40px;
-            color: $heading-color;
-            margin-bottom: 10px;
-        }
+      &-title {
+         font-weight: 700;
+         font-size: 32px;
+         line-height: 40px;
+         color: $heading-color;
+         margin-bottom: 10px;
+      }
 
-        &-caption {
+      &-caption {
+         font-weight: 500;
+         font-size: 15px;
+         line-height: 15px;
+         color: #c0c0c0;
+      }
+   }
+
+   &-point {
+      &-item {
+         margin-bottom: 53px;
+      }
+
+      &-caption {
+         color: $green-color;
+         margin-bottom: 2px;
+         font-weight: 600;
+         font-size: 14px;
+         line-height: 30px;
+         letter-spacing: 0.2em;
+      }
+
+      &-title {
+         font-weight: 500;
+         font-size: 28px;
+         line-height: 40px;
+         color: #c7c7c7;
+         margin-bottom: 33px;
+      }
+
+      &-tick {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         border-bottom: 1.2px solid #F0F0F0;
+         padding-bottom: 20px;
+
+         &-road {
             font-weight: 500;
             font-size: 15px;
             line-height: 15px;
-            color: #c0c0c0;
-        }
-    }
-
-    &-point {
-        &-item {
-            margin-bottom: 53px;
-        }
-
-        &-caption {
-            color: $green-color;
-            margin-bottom: 2px;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 30px;
-            letter-spacing: 0.2em;
-        }
-
-        &-title {
-            font-weight: 500;
-            font-size: 28px;
-            line-height: 40px;
-            color: #c7c7c7;
-            margin-bottom: 33px;
-        }
-
-        &-tick {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1.2px solid #F0F0F0;
-            padding-bottom: 20px;
-
-            &-road {
-                font-weight: 500;
-                font-size: 15px;
-                line-height: 15px;
-                letter-spacing: 0.005em;
-                color: $heading-color;
-            }
-        }
-    }
+            letter-spacing: 0.005em;
+            color: $heading-color;
+         }
+      }
+   }
 }

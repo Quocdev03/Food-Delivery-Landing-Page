@@ -5,6 +5,7 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
+      gap: 179px;
    }
 
    &-title {
@@ -45,7 +46,5 @@
          line-height: 15px;
          color: #000000;
       }
-
-      &-text {}
    }
 }
