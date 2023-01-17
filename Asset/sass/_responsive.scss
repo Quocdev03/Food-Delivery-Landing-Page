@@ -1,6 +1,7 @@
 // Order Section Responsive
-@media screen and (max-width: 1149.98px) {
-   .order {
+.order {
+   @media screen and (max-width: 1149.98px) {
+
       &-offer {
          &-main {
             transition: all 0.2s linear;
@@ -30,10 +31,9 @@
          }
       }
    }
-}
 
-@media screen and (max-width:600px) {
-   .order {
+   @media screen and (max-width:600px) {
+
       &-offer {
          &-images {
 
@@ -44,10 +44,9 @@
          }
       }
    }
-}
 
-@media screen and (max-width:494.98px) {
-   .order {
+   @media screen and (max-width:494.98px) {
+
       &-offer {
          &-images {
 
@@ -58,10 +57,9 @@
          }
       }
    }
-}
 
-@media screen and (max-width: 350.98px) {
-   .order {
+   @media screen and (max-width: 350.98px) {
+
       &-offer {
          &-images {
 
@@ -74,9 +72,11 @@
    }
 }
 
+
 // Subscribe Section Responsive
-@media screen and (max-width: 967.98px) {
-   .subscribe {
+.subscribe {
+   @media screen and (max-width: 967.98px) {
+
       &-main {
          flex-direction: column;
          transition: all 0.2s linear;
@@ -87,10 +87,9 @@
          transition: all 0.2s linear;
       }
    }
-}
 
-@media screen and (max-width: 768.98px) {
-   .subscribe {
+   @media screen and (max-width: 768.98px) {
+
       &-main {
          gap: 40px;
          padding: 40px;
@@ -113,13 +112,14 @@
       }
    }
 
-}
+   @media screen and (max-width: 567.98px) {
 
-@media screen and (max-width: 375.98px) {
-   .subscribe {
       &-content {
          width: 100%;
       }
+   }
+
+   @media screen and (max-width: 375.98px) {
 
       &-form {
          &-input input {
