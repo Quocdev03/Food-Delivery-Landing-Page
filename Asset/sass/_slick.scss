@@ -1,34 +1,37 @@
 .slick {
-    &-initialized {
-        .slick {
-            &-slide {
-                margin: 70px 10px;
-            }
-        }
-    }
+   &-initialized {
+      .slick {
+         &-slide {
+            margin: 70px 10px;
+         }
+      }
+   }
 
-    &-arrow {
-        position: absolute;
-        top: -32%;
-        right: 0;
-        z-index: 2;
-        background-color: $heading-color;
-        color: #ffff;
-    }
+   &-arrow {
+      position: absolute;
+      top: -37%;
+      right: 0;
+      z-index: 2;
+      background-color: $heading-color;
+      color: #ffff;
+   }
 
-    &-prev {
-        right: 5%;
-        background-color: #ffff;
-        color: #C4C4C4;
-    }
+   &-prev {
+      right: 5%;
+      background-color: #ffff;
+      color: #C4C4C4;
+   }
 
-    &-arrow,
-    &-prev {
-        border: none;
-        outline: none;
-        padding: 11px 13px;
-        cursor: pointer;
-        border-radius: 100rem;
-        font-size: 20px;
-    }
+   &-arrow,
+   &-prev {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      outline: none;
+      padding: 13px 13px;
+      cursor: pointer;
+      border-radius: 100rem;
+      font-size: 20px;
+   }
 }
