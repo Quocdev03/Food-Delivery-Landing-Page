@@ -11,15 +11,11 @@
       position: absolute;
       top: -37%;
       right: 0;
-      z-index: 2;
-      background-color: $heading-color;
-      color: #ffff;
+
    }
 
    &-prev {
       right: 5%;
-      background-color: #ffff;
-      color: #C4C4C4;
    }
 
    &-arrow,
@@ -33,5 +29,13 @@
       cursor: pointer;
       border-radius: 100rem;
       font-size: 20px;
+      background-color: #d3d3d3;
+      color: $white-color;
+      z-index: 2;
+      transition: all 0.3s ease-in;
+
+      &:hover {
+         background-color: $heading-color;
+      }
    }
 }

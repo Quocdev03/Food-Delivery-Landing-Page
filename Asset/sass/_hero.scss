@@ -57,7 +57,7 @@
          align-items: center;
          border: 1px solid #00BE4C;
          border-radius: 15px 0px 0px 15px;
-         padding: 24px 18px 24px 16px;
+         padding: 23px 18px 23px 16px;
 
          input {
             outline: none;
@@ -82,8 +82,9 @@
          align-items: center;
          background: $primary-gradient;
          border-radius: 0px 15px 15px 0px;
-         padding: 14px 16px 13px 20px;
+         padding: 13px 16px 13px 20px;
          border: 1px solid #00BE4C;
+         outline: 0;
          cursor: pointer;
          font-weight: 500;
          font-size: 16px;

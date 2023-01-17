@@ -1,0 +1,29 @@
+.countries {
+   margin-bottom: 100px;
+
+   &-heading {
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 40px;
+      color: $heading-color;
+      margin-bottom: 42px;
+   }
+
+   &-content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 100px;
+   }
+
+   &-item {
+      margin-bottom: 23px;
+   }
+
+   &-link {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: $gray-color;
+      margin-bottom: 23px;
+   }
+}
