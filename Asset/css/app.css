@@ -170,6 +170,87 @@ body {
 }
 .menu-toggle {
   display: none;
+  font-size: 25px;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  width: 350px;
+  z-index: 9999;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transform: translateX(130%);
+  transition: transform 0.3s linear;
+  will-change: transform;
+}
+.navigation.active {
+  transform: translateX(0%);
+}
+.navigation-close {
+  cursor: pointer;
+  font-size: 35px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.navigation-list {
+  height: 100%;
+  padding: 70px 40px;
+}
+.navigation-item {
+  display: block;
+  padding: 17px;
+}
+.navigation-link {
+  display: block;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+  color: #232323;
+  transition: color 0.3s ease-in-out;
+  position: relative;
+}
+.navigation-link::after {
+  position: absolute;
+  bottom: -10px;
+  left: auto;
+  right: 0;
+  width: 0;
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #FF4415;
+  transition: width 0.3s ease-in-out;
+}
+.navigation-link:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+.navigation-link:hover {
+  color: #FF4415;
+}
+.navigation-auth {
+  display: flex;
+  align-items: center;
+}
+.navigation-signup-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.navigation-signup-button-link {
+  padding: 13px 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  background: linear-gradient(180deg, #272727 0%, #171717 46.01%, #101010 100%);
+  border-radius: 12px;
 }
 
 .hero {
@@ -200,7 +281,7 @@ body {
   max-width: 452px;
 }
 .hero-image {
-  transform: translateX(11%);
+  transform: translateX(12%);
 }
 .hero-image img {
   width: 100%;
@@ -905,6 +986,33 @@ body {
   font-size: 14px;
   line-height: 16px;
   color: #3E3E3E;
+}
+
+@media screen and (max-width: 768.98px) {
+  .header-menu {
+    display: none;
+  }
+  .header-auth {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768.98px) {
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 374.98px) {
+  .navigation {
+    width: 250px;
+    transition: all 0.2s linear;
+  }
+  .navigation-auth {
+    display: initial;
+    transition: all 0.2s linear;
+  }
 }
 
 @media screen and (max-width: 1149.98px) {

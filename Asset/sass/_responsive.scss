@@ -1,3 +1,43 @@
+// Header Responsive
+
+.header {
+   @media screen and (max-width: 768.98px) {
+      &-menu {
+         display: none;
+      }
+
+      &-auth {
+         display: none;
+      }
+   }
+}
+
+// Menu Responsive
+.menu {
+   @media screen and (max-width: 768.98px) {
+
+      &-toggle {
+         display: block;
+         cursor: pointer;
+      }
+   }
+
+}
+
+// Navigation Responsive
+.navigation {
+   @media screen and (max-width: 374.98px) {
+      width: 250px;
+      transition: all 0.2s linear;
+
+      &-auth {
+         display: initial;
+         transition: all 0.2s linear;
+      }
+   }
+
+}
+
 // Order Section Responsive
 .order {
    @media screen and (max-width: 1149.98px) {
