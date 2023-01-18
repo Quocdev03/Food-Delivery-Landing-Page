@@ -9,12 +9,33 @@ $(document).ready(function () {
             `<button type='button' class='slick-prev pull-left slick-arrow'><ion-icon name="chevron-back-outline"></ion-icon></button>`,
          nextArrow: // nút next
             `<button type='button' class='slick-next pull-right slick-arrow'><ion-icon name="chevron-forward-outline"></ion-icon></button>`,
+         responsive: [ // thay đổi số lượng ảnh hiển thị theo kích thước màn hình
+            {
+               breakpoint: 1024,
+               settings: {
+                  slidesToShow: 3,
+               }
+            },
+            {
+               breakpoint: 768,
+               settings: {
+                  slidesToShow: 2,
+               }
+            },
+            {
+               breakpoint: 568,
+               settings: {
+                  slidesToShow: 1,
+                  arrows: false,
+               }
+            },
+         ],
       }
    );
 });
 
 // Menu toggle
-// Sự kiện domcontentloaded dùng để chạy code ngây cả khi chưa load hết html
+// Sự kiện domcontentloaded dùng để chạy code ngay cả khi chưa load hết html
 document.addEventListener("DOMContentLoaded", function () {
    // Tạo biến lưu trữ các thẻ html cần sử dụng
    const menuOpen = document.querySelector(".menu-toggle");
@@ -30,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
    menuClose.addEventListener("click", function () {
       menu.classList.remove("active");
    });
-   // Xoá class active khi click cả bên ngoài menu
+   // Xoá class active khi click ra bên ngoài menu
    document.addEventListener("click", function (e) {
       // Nếu click vào menu hoặc nút toggle thì xoá class active
       if (!menu.contains(e.target) && !e.target.matches(".menu-toggle")) {

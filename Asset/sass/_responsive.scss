@@ -1,5 +1,22 @@
-// Header Responsive
+// Section Title Responsive 
+.section {
+   @media screen and (max-width: 1024.98px) {
 
+      &-title {
+         font-size: 35px;
+      }
+   }
+
+   @media screen and (max-width: 374.98px) {
+      &-title {
+         font-size: 25px;
+      }
+   }
+
+
+}
+
+// Header Responsive
 .header {
    @media screen and (max-width: 768.98px) {
       &-menu {
@@ -35,6 +52,155 @@
          transition: all 0.2s linear;
       }
    }
+
+}
+
+// Hero Section Responsive
+.hero {
+   margin-bottom: 70px;
+
+   @media screen and (max-width: 1023.98px) {
+
+      &-main {
+         flex-direction: column-reverse;
+         gap: 35px;
+      }
+
+      &-heading {
+         font-size: 53px;
+      }
+
+      &-desc {
+         font-size: 16px;
+      }
+
+      &-member {
+         font-size: 16px;
+      }
+
+      &-content {
+         width: 100%;
+      }
+
+      &-image {
+         transform: translateX(20%);
+      }
+   }
+
+   @media screen and (max-width: 767.98px) {
+
+      &-heading {
+         font-size: 43px;
+      }
+
+      &-desc {
+         font-size: 15px;
+      }
+
+      &-member {
+         font-size: 15px;
+      }
+
+      &-image {
+         transform: translateX(5%);
+      }
+   }
+
+   @media screen and (max-width: 467.98px) {
+      &-location {
+         margin-bottom: 30px;
+      }
+
+      &-form {
+         flex-direction: column;
+         gap: 20px;
+
+         &-input {
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+
+            &-icon {
+               display: none;
+            }
+         }
+
+         &-discover {
+            width: 100%;
+         }
+
+         &-button {
+            border-radius: 15px;
+         }
+      }
+
+      &-image {
+         transform: translateX(0);
+      }
+   }
+
+   @media screen and (max-width: 374.98px) {
+
+      &-heading {
+         font-size: 40px;
+         line-height: 50px;
+         margin-bottom: 15px;
+
+      }
+
+      &-desc {
+         font-size: 15px;
+      }
+
+      &-member {
+         font-size: 15px;
+
+         &-link {
+            font-size: 17px;
+         }
+      }
+
+      &-form {
+         &-input {
+            padding: 20px;
+         }
+
+         &-button {
+            padding: 10px 15px;
+            ;
+         }
+      }
+   }
+}
+
+// Food Section Responsive
+.food {
+   @media screen and (max-width: 767.98px) {
+      &-header {
+         margin-bottom: 30px;
+      }
+   }
+
+}
+
+// Slick Slider Responsive
+.slick {
+   @media screen and (max-width: 1024.98px) {
+      &-prev {
+         right: 7%;
+      }
+   }
+
+   @media screen and (max-width: 767.98px) {
+      &-prev {
+         right: 9%;
+      }
+
+      &-arrow {
+         top: -27%;
+      }
+   }
+
 
 }
 

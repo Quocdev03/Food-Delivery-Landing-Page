@@ -255,6 +255,7 @@ body {
 
 .hero {
   margin-bottom: 80px;
+  display: block;
 }
 .hero-main {
   display: flex;
@@ -352,6 +353,7 @@ body {
 
 .food {
   margin-bottom: 70px;
+  display: block;
 }
 .food-header {
   display: flex;
@@ -988,6 +990,17 @@ body {
   color: #3E3E3E;
 }
 
+@media screen and (max-width: 1024.98px) {
+  .section-title {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 374.98px) {
+  .section-title {
+    font-size: 25px;
+  }
+}
+
 @media screen and (max-width: 768.98px) {
   .header-menu {
     display: none;
@@ -1012,6 +1025,113 @@ body {
   .navigation-auth {
     display: initial;
     transition: all 0.2s linear;
+  }
+}
+
+.hero {
+  margin-bottom: 70px;
+}
+@media screen and (max-width: 1023.98px) {
+  .hero-main {
+    flex-direction: column-reverse;
+    gap: 35px;
+  }
+  .hero-heading {
+    font-size: 53px;
+  }
+  .hero-desc {
+    font-size: 16px;
+  }
+  .hero-member {
+    font-size: 16px;
+  }
+  .hero-content {
+    width: 100%;
+  }
+  .hero-image {
+    transform: translateX(20%);
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .hero-heading {
+    font-size: 43px;
+  }
+  .hero-desc {
+    font-size: 15px;
+  }
+  .hero-member {
+    font-size: 15px;
+  }
+  .hero-image {
+    transform: translateX(5%);
+  }
+}
+@media screen and (max-width: 467.98px) {
+  .hero-location {
+    margin-bottom: 30px;
+  }
+  .hero-form {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hero-form-input {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .hero-form-input-icon {
+    display: none;
+  }
+  .hero-form-discover {
+    width: 100%;
+  }
+  .hero-form-button {
+    border-radius: 15px;
+  }
+  .hero-image {
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 374.98px) {
+  .hero-heading {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 15px;
+  }
+  .hero-desc {
+    font-size: 15px;
+  }
+  .hero-member {
+    font-size: 15px;
+  }
+  .hero-member-link {
+    font-size: 17px;
+  }
+  .hero-form-input {
+    padding: 20px;
+  }
+  .hero-form-button {
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .food-header {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1024.98px) {
+  .slick-prev {
+    right: 7%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .slick-prev {
+    right: 9%;
+  }
+  .slick-arrow {
+    top: -27%;
   }
 }
 
