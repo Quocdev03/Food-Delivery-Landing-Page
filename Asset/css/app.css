@@ -268,7 +268,7 @@ body::-webkit-scrollbar-track {
 }
 
 .hero {
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 .hero-main {
   display: flex;
@@ -1084,7 +1084,7 @@ body::-webkit-scrollbar-track {
 }
 @media screen and (max-width: 767.98px) {
   .hero {
-    margin-top: 185px;
+    margin-top: 140px;
   }
   .hero-heading {
     font-size: 43px;

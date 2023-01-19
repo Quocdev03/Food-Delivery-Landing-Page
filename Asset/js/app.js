@@ -47,22 +47,28 @@ document.addEventListener("DOMContentLoaded", function () {
    // Tạo biến lưu trữ các thẻ html cần sử dụng
    const menuOpen = document.querySelector(".menu-toggle");
    const menuClose = document.querySelector(".navigation-close");
-   const menu = document.querySelector(".navigation");
+   const nav = document.querySelector(".navigation");
    // Nếu không tìm thấy thẻ html trên thì return
-   if (!menuOpen || !menuClose || !menu) return;
+   if (!menuOpen || !menuClose || !nav) return;
    // Thêm class active khi click vào nút toggle
    menuOpen.addEventListener("click", function () {
-      menu.classList.add("active");
+      nav.classList.add("active");
    });
    // Xoá class active khi click vào nút close
    menuClose.addEventListener("click", function () {
-      menu.classList.remove("active");
+      nav.classList.remove("active");
    });
-   // Xoá class active khi click ra bên ngoài menu
+   // Xoá class active khi click ra bên ngoài navigation
    document.addEventListener("click", function (e) {
       // Nếu click vào menu hoặc nút toggle thì xoá class active
-      if (!menu.contains(e.target) && !e.target.matches(".menu-toggle")) {
-         menu.classList.remove("active");
+      if (!nav.contains(e.target) && !e.target.matches(".menu-toggle")) {
+         nav.classList.remove("active");
       }
    });
 });
+
+new kursor({
+   type: 4,
+   removeDefaultCursor: true,
+   color: "$white-color",
+})
