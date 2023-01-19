@@ -11,7 +11,7 @@ $(document).ready(function () {
             `<button type='button' class='slick-next pull-right slick-arrow'><ion-icon name="chevron-forward-outline"></ion-icon></button>`,
          responsive: [ // thay đổi số lượng ảnh hiển thị theo kích thước màn hình
             {
-               breakpoint: 1024,
+               breakpoint: 1026,
                settings: {
                   slidesToShow: 3,
                }
@@ -23,10 +23,17 @@ $(document).ready(function () {
                }
             },
             {
-               breakpoint: 568,
+               breakpoint: 610,
                settings: {
-                  slidesToShow: 1,
                   arrows: false,
+                  slidesToShow: 2,
+               }
+            },
+            {
+               breakpoint: 530,
+               settings: {
+                  arrows: false,
+                  slidesToShow: 1,
                }
             },
          ],

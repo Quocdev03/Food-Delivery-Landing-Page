@@ -1,6 +1,5 @@
 .hero {
    margin-bottom: 80px;
-   display: block;
 
    &-main {
       display: flex;
@@ -31,7 +30,6 @@
    }
 
    &-image {
-      transform: translateX(12%);
 
       img {
          width: 100%;

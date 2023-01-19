@@ -1,137 +1,137 @@
 .order {
-    margin-bottom: 110px;
+   margin-bottom: 110px;
 
-    &-title {
-        text-align: center;
-        margin-bottom: 10px;
-    }
+   &-title {
+      text-align: center;
+      margin-bottom: 10px;
+   }
 
-    &-heading {
-        font-weight: 700;
-        font-size: 52px;
-        line-height: 62px;
-        max-width: 432px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        margin-bottom: 55px;
-        color: $heading-color;
-    }
+   &-heading {
+      font-weight: 700;
+      font-size: 52px;
+      line-height: 62px;
+      max-width: 432px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-bottom: 55px;
+      color: $heading-color;
+   }
 
-    &-list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 0 100px;
-        margin-bottom: 96px;
-    }
+   &-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 100px;
+      margin-bottom: 96px;
+   }
 
-    &-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+   &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
 
-        &-image {
-            margin-bottom: 40px;
+      &-image {
+         margin-bottom: 40px;
 
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-
-        &-title {
-            font-weight: 700;
-            font-size: 26px;
-            line-height: 24px;
-            color: #171717;
-            margin-bottom: 24px;
-        }
-
-        &-desc {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 28px;
-            color: $text-color;
+         img {
             width: 100%;
-            max-width: 270px;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
+            height: 100%;
+            object-fit: cover;
+         }
+      }
 
-    &-offer {
+      &-title {
+         font-weight: 700;
+         font-size: 26px;
+         line-height: 24px;
+         color: #171717;
+         margin-bottom: 24px;
+      }
 
-        &-main {
-            display: flex;
-            align-items: center;
-            gap: 280px;
-            border-radius: 24px;
-            padding: 21px 50px;
-            background: linear-gradient(115deg, #FEB618 50%, #2FB652 0%);
-        }
+      &-desc {
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 28px;
+         color: $text-color;
+         width: 100%;
+         max-width: 270px;
+         text-align: center;
+         margin-left: auto;
+         margin-right: auto;
+      }
+   }
 
-        &-title {
-            font-weight: 700;
-            font-size: 34px;
-            line-height: 40px;
-            color: $white-color;
-            margin-bottom: 22px;
-        }
+   &-offer {
 
-        &-desc {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 28px;
-            color: $white-color;
-            max-width: 349px;
-            width: 100%;
-        }
+      &-main {
+         display: flex;
+         align-items: center;
+         gap: 280px;
+         border-radius: 24px;
+         padding: 21px 50px;
+         background: linear-gradient(115deg, #FEB618 50%, #2FB652 0%);
+      }
 
-        &-images {
-            display: flex;
-            align-items: center;
-            gap: 10px;
+      &-title {
+         font-weight: 700;
+         font-size: 34px;
+         line-height: 40px;
+         color: $white-color;
+         margin-bottom: 22px;
+      }
 
-            &-item {
-                &:first-child {
-                    transform: translateY(30px);
-                }
+      &-desc {
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 28px;
+         color: $white-color;
+         max-width: 349px;
+         width: 100%;
+      }
 
-                &:nth-child(2) {
-                    transform: translate(-25px, -80px);
-                }
+      &-images {
+         display: flex;
+         align-items: center;
+         gap: 10px;
 
-                &:nth-child(3) {
-                    transform: translateY(-30px);
-                }
-
-                &-text {
-                    font-family: $secondary-font;
-                    font-weight: 400;
-                    font-size: 43px;
-                    color: $white-color;
-                    line-height: 30px;
-                    transform: translate(15px, -45px) rotate(-18.51deg);
-
-                    span {
-                        font-family: $primary-font;
-                        font-weight: 600;
-                        font-size: 20px;
-                    }
-                }
-
-                &:nth-child(5) {
-                    transform: translate(-60px, 70px);
-                }
-
-                &:nth-child(6) {
-                    transform: translate(-80px, -35px);
-                }
+         &-item {
+            &:first-child {
+               transform: translateY(30px);
             }
-        }
-    }
+
+            &:nth-child(2) {
+               transform: translate(-25px, -80px);
+            }
+
+            &:nth-child(3) {
+               transform: translateY(-30px);
+            }
+
+            &-text {
+               font-family: $secondary-font;
+               font-weight: 400;
+               font-size: 43px;
+               color: $white-color;
+               line-height: 30px;
+               transform: translate(15px, -45px) rotate(-18.51deg);
+
+               span {
+                  font-family: $primary-font;
+                  font-weight: 600;
+                  font-size: 20px;
+               }
+            }
+
+            &:nth-child(5) {
+               transform: translate(-60px, 70px);
+            }
+
+            &:nth-child(6) {
+               transform: translate(-80px, -35px);
+            }
+         }
+      }
+   }
 }

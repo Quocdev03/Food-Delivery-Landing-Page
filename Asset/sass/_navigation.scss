@@ -17,7 +17,7 @@
 
    &-close {
       cursor: pointer;
-      font-size: 35px;
+      font-size: 36px;
       position: absolute;
       right: 20px;
       top: 20px;
@@ -31,6 +31,7 @@
    &-item {
       display: block;
       padding: 17px;
+      margin-bottom: 15px;
    }
 
    &-link {
