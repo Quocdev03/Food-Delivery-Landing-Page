@@ -36,12 +36,11 @@
 
    &-link {
       display: block;
-      text-transform: capitalize;
       font-weight: 500;
       font-size: 16px;
       line-height: 17px;
       color: #232323;
-      transition: color .3s ease-in-out;
+      transition: all .3s ease-in-out;
       position: relative;
 
       &::after {

@@ -35,6 +35,20 @@ body {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgb(137, 137, 137);
+}
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
 
 .wrapper {
   max-width: 1440px;
@@ -207,12 +221,11 @@ body {
 }
 .navigation-link {
   display: block;
-  text-transform: capitalize;
   font-weight: 500;
   font-size: 16px;
   line-height: 17px;
   color: #232323;
-  transition: color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   position: relative;
 }
 .navigation-link::after {
@@ -1007,7 +1020,7 @@ body {
     right: 0;
     background-color: #ffffff;
     box-shadow: 0 0 13px rgba(0, 0, 0, 0.3);
-    padding: 30px;
+    padding: 25px;
     margin: 0;
     z-index: 1000;
   }
