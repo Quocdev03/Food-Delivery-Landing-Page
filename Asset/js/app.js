@@ -69,6 +69,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 new kursor({
    type: 4,
-   removeDefaultCursor: true,
-   color: "$white-color",
+   removeDefaultCursor: false,
+   color: "#000",
 })
+
+AOS.init({
+   once: false,
+});
