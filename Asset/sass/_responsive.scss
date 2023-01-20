@@ -126,7 +126,7 @@
       }
    }
 
-   @media screen and (max-width: 479.98px) {
+   @media screen and (max-width: 499.99px) {
       &-heading {
          font-size: 32px;
       }
@@ -385,11 +385,14 @@
       }
    }
 
-   @media screen and (max-width: 494.98px) {
+   @media screen and (max-width: 667.98px) {
       &-pickup {
-         flex-direction: column;
+         flex-wrap: wrap;
          gap: 10px;
       }
+   }
+
+   @media screen and (max-width: 494.98px) {
 
       &-heading {
          font-size: 32px;
@@ -405,10 +408,6 @@
          &-title {
             font-size: 25px;
          }
-      }
-
-      &-image {
-         width: 100%;
       }
 
       &-point {

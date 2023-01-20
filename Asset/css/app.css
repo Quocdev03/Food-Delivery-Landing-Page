@@ -1096,7 +1096,7 @@ body::-webkit-scrollbar-track {
     font-size: 15px;
   }
 }
-@media screen and (max-width: 479.98px) {
+@media screen and (max-width: 499.99px) {
   .hero-heading {
     font-size: 32px;
   }
@@ -1271,11 +1271,13 @@ body::-webkit-scrollbar-track {
     font-size: 40px;
   }
 }
-@media screen and (max-width: 494.98px) {
+@media screen and (max-width: 667.98px) {
   .location-pickup {
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 10px;
   }
+}
+@media screen and (max-width: 494.98px) {
   .location-heading {
     font-size: 32px;
   }
@@ -1287,9 +1289,6 @@ body::-webkit-scrollbar-track {
   }
   .location-content-title {
     font-size: 25px;
-  }
-  .location-image {
-    width: 100%;
   }
   .location-point-caption {
     font-size: 13px;
