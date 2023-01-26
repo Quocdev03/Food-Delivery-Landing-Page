@@ -1,6 +1,6 @@
 // Slick slider 
 $(document).ready(function () {
-   $('.food-list').slick(
+   $('.intro-list').slick(
       {
          infinite: false, // true: lặp lại, false: không lặp lại
          slidesToShow: 4, // số lượng ảnh hiển thị
@@ -67,12 +67,14 @@ document.addEventListener("DOMContentLoaded", function () {
    });
 });
 
+// Custom Cursor
 new kursor({
    type: 4,
    removeDefaultCursor: false,
    color: "#000",
 })
 
+// Animation on scroll
 AOS.init({
    once: false,
 });

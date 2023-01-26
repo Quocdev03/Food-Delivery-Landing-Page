@@ -1,0 +1,207 @@
+.contact {
+   margin: 50px 0 100px 0;
+
+   &-main {
+      width: 100%;
+   }
+
+   &-title {
+      margin-bottom: 70px;
+   }
+
+   &-box {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 5fr 4fr;
+      grid-template-areas:
+         "form info"
+         "form map";
+      grid-gap: 25px;
+   }
+
+   &-item {
+      padding: 40px;
+      border-radius: 7px;
+      box-shadow: 0 0 6px rgba(164, 164, 164, 0.6);
+
+      &-heading {
+         font-weight: 600;
+         color: $heading-color;
+         font-size: 20px;
+         margin-bottom: 40px;
+      }
+   }
+
+   &-area {
+      &-form {
+         grid-area: form;
+      }
+
+      &-info {
+         grid-area: info;
+      }
+
+      &-map {
+         grid-area: map;
+      }
+   }
+
+   &-form {
+      background-color: #f8f8f8;
+
+      &-box {
+         position: relative;
+         width: 100%;
+      }
+
+      &-input {
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 40px;
+         width: 100%;
+         position: relative;
+
+         &::after {
+            position: absolute;
+            content: '';
+            top: 45px;
+            left: 10px;
+            height: 1px;
+            width: 95%;
+            background-color: black;
+         }
+
+         &--title {
+            color: $heading-color;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-weight: 500;
+         }
+
+         input {
+            padding: 10px;
+            font-size: 16px;
+            outline: none;
+            border: none;
+            background-color: transparent;
+
+            &::placeholder {
+               transition: all 0.2s linear;
+            }
+
+            &:focus {
+               &::placeholder {
+                  transform: translateY(-15px);
+                  font-size: 13px;
+               }
+            }
+         }
+      }
+
+      &-textarea {
+         transition: all 0.2s linear;
+         margin-top: 20px;
+         margin-bottom: 30px;
+
+         textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            resize: none;
+            min-height: 220px;
+            border-radius: 7px;
+            transition: all 0.2s linear;
+            border: 1px solid rgba(0, 0, 0, .6);
+
+            &:focus {
+               border: 1.1px solid rgba(0, 0, 0, 1);
+               border-radius: 7px;
+               font-size: 14px;
+               transition: all 0.2s linear;
+               padding: 20px;
+            }
+         }
+      }
+
+      &-button {
+         display: inline-block;
+
+         &-text {
+            cursor: pointer;
+            color: $white-color;
+            font-size: 16px;
+            background: $primary-gradient;
+            font-weight: 500;
+            padding: 13px 40px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+         }
+      }
+   }
+
+   &-info {
+      background-image: linear-gradient(109.6deg, rgba(96, 221, 142, 1) 11.2%, rgba(24, 138, 141, 1) 91.1%);
+
+      h1 {
+         color: $white-color;
+      }
+
+      &-item {
+         display: flex;
+         align-items: center;
+         margin-bottom: 10px;
+
+         span {
+            padding: 12px;
+            color: $white-color;
+            background-color: rgba(255, 255, 255, .2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            border-radius: 50%;
+            margin-right: 15px;
+         }
+
+         a,
+         p {
+            color: $white-color;
+            font-size: 17px;
+            letter-spacing: .3px;
+            line-height: 25px;
+         }
+      }
+
+      &-social {
+         display: flex;
+         align-items: center;
+         gap: 15px;
+         margin-top: 40px;
+
+         &-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $white-color;
+            font-size: 22px;
+            padding: 12px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+         }
+      }
+   }
+
+   &-map {
+      padding: 0;
+
+      iframe {
+         width: 100%;
+         height: 100%;
+         border-radius: 7px;
+      }
+   }
+}

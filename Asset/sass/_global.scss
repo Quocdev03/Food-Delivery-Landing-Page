@@ -59,6 +59,19 @@ body {
    &-center {
       text-align: center;
    }
+
+   @media screen and (max-width: 1024.98px) {
+
+      &-title {
+         font-size: 35px;
+      }
+   }
+
+   @media screen and (max-width: 374.98px) {
+      &-title {
+         font-size: 25px;
+      }
+   }
 }
 
 .btn {
@@ -114,5 +127,22 @@ body {
       &-color3 {
          color: #FFBB27;
       }
+   }
+}
+
+.row {
+   &-50 {
+      display: flex;
+      gap: 20px;
+
+      @media screen and (max-width: 767.98px) {
+         flex-direction: column;
+         gap: 0;
+      }
+
+   }
+
+   &-100 {
+      width: 100%;
    }
 }
